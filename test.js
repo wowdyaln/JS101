@@ -1,12 +1,38 @@
+function space(n) {
+  let space = ""
+  for (let i = 1; i < n; i++) {
+    space += "_"
+  }
+  // console.log(space);
+  return space
+}
 
-let a = [1,2,3]
+function leaf(n) {
+  let leaf = "*"
+  for (let i = 1; i < n; i++) {
+    leaf += "**"
+  }
+  // console.log(leaf);
+  return leaf
+}
 
-// a.push(2,4,5,5,6,[2,1,[3,7,9],3])
+function printLowAll(n) {
+  let output = ""
+  for (let i = 1; i < n; i++) {
+    output += "_"
+  }
+  output += "*\n"
 
-console.log(a);
-b= Array.isArray(a)
-console.log(b);
-c = [10,20]
-d = c.concat(a) 
+  for (let k = 0; k < n; k++) {
+    console.log(output);
+  }
+}
 
-console.log(d);
+function tree(n) {
+  let upper = ""
+  for (let i = 0; i < n; i++) {
+    upper = space(n - i) + leaf(i + 1)
+    console.log(upper);
+  }
+  printLowAll(n)
+}
