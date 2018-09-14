@@ -4,7 +4,7 @@
   "description": "",
   "main": "L3-1.js",
   "scripts": {
-    "test": "mocha --reporter progress buildScripts/testSetup.js \"homeworks/**/*.test.js\" "
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"./*.test.js\" "
   },
   "author": "",
   "license": "ISC",

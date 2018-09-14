@@ -35,12 +35,5 @@ function sort(ary){
   return ascend(ary)
 }
 
-// TEST
-let list  = [6, 8, 3, 2,1,14,3,2,6,-1,-354,8,9,0,21,45,2,3,5,7,9]
-let list2 = [6, 8, 3, 2,1,14,3,2,6,-1,-354,8,9,0,21,45,2,3,5,7,9]
 
-let out = sort(list)
-let out2 = list2.sort( (a,b)=> a - b)
-
-console.log(out);
-console.log(out2);
+export default sort
