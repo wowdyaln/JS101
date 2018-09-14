@@ -11,7 +11,8 @@ isUpperCase("aBCD") 正確回傳值：false
 */
 
 function isUpperCase(str){
-  return /[A-Z]/.test(str[0])
+  return /[A-Z]/.test(str[0]
+  )
 }
 
 export default isUpperCase
